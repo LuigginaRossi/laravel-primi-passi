@@ -8,5 +8,16 @@
 </head>
 <body>
     <h1>Welcome World!</h1>
+
+    <h3>Ingredients for chocolate and pear cake:</h3>
+    <ul> 
+        @foreach ($shoppingList as $ingredient)
+            <li>
+                {{$ingredient}}
+            </li>
+        @endforeach
+    </ul>
+
+    
 </body>
 </html>

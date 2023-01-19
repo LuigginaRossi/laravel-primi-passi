@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $shoppingList= ["farina", "uova", "cioccolato", "pere", "vino bianco"];
+    return view('home',[
+        "shoppingList"=>$shoppingList,
+    ]);
 });
 
 
