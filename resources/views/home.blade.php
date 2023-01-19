@@ -13,11 +13,19 @@
     <ul> 
         @foreach ($shoppingList as $ingredient)
             <li>
-                {{$ingredient}}
+                {{$ingredient}} 
             </li>
         @endforeach
     </ul>
+<ul>
+    @foreach ( $quantityList as $key => $quantity)
+        <li>
+                {{$key}} n. {{$quantity}} <br>
+        </li>
+     @endforeach
+</ul>
+   
 
-    
+
 </body>
 </html>
